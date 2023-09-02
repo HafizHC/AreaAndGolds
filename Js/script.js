@@ -94,13 +94,13 @@ function areaG(){
 		players[i].collsionArea(area);
 	}
 	if (!players[1].alive && !players[0].alive) {
-		drawText("Berabere",cvs.offsetWidth/2,cvs.offsetHeight/2,40);
+		drawText("Draw",cvs.offsetWidth/2,cvs.offsetHeight/2,40);
 		clearInterval(timer);
 	}else if(!players[1].alive){
-		drawText(players[0].name + " Kazandi",cvs.offsetWidth/2,cvs.offsetHeight/2,40);
+		drawText("Winner " + players[1].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40);
 		clearInterval(timer);
 	}else if(!players[0].alive){
-		drawText(players[1].name + " Kazandi",cvs.offsetWidth/2,cvs.offsetHeight/2,40);
+		drawText("Winner " + players[0].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40);
 		clearInterval(timer);
 	}
 	
