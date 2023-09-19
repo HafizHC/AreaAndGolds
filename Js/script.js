@@ -94,13 +94,13 @@ function areaG(){
 		players[i].collsionArea(area);
 	}
 	if (!players[1].alive && !players[0].alive) {
-		drawText("Draw",cvs.offsetWidth/2,cvs.offsetHeight/2,40);
+		drawText("Draw",cvs.offsetWidth/2,cvs.offsetHeight/2,40,"center");
 		clearInterval(timer);
 	}else if(!players[1].alive){
-		drawText("Winner " + players[1].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40);
+		drawText("Winner " + players[1].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40,"center");
 		clearInterval(timer);
 	}else if(!players[0].alive){
-		drawText("Winner " + players[0].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40);
+		drawText("Winner " + players[0].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40,"center");
 		clearInterval(timer);
 	}
 	
@@ -159,7 +159,7 @@ function goldG(){
 			players[i].healthy = 100;
 		}
 		if(players[i].score >= 5){
-			drawText("Winner " + players[i].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40);
+			drawText("Winner " + players[i].name,cvs.offsetWidth/2,cvs.offsetHeight/2,40,"center");
 			clearInterval(timer);
 		}
 	}
@@ -194,8 +194,8 @@ function draw() {
 			bullets[i].draw();
 	}
 
-	players[0] != null ? drawTextLeft(players[0].name + ": " + players[0].score,20,20,15):null;
-	players[1] != null ? drawTextRight(players[1].name + ": " + players[1].score,cvs.offsetWidth-20,20,15):null;
+	players[0] != null ? drawText(players[0].name + ": " + players[0].score,20,20,15,"left"):null;
+	players[1] != null ? drawText(players[1].name + ": " + players[1].score,cvs.offsetWidth-20,20,15,"right"):null;
 }
 
 function collsion1(o1,o2){	
