@@ -22,23 +22,9 @@ function collsion(x,y,w,h){
 }
 
 
-function drawText(text,x,y,font,addw) {
+function drawText(text,x,y,font,position) {
 	ctx.fillStyle = 'white';
 	ctx.font = font + 'px Arial';
 	let tW = ctx.measureText(text).width;
-	ctx.fillText(text, x-tW/2 , y);
-}
-
-function drawTextRight(text,x,y,font,addw) {
-	ctx.fillStyle = 'white';
-	ctx.font = font + 'px Arial';
-	let tW = ctx.measureText(text).width;
-	ctx.fillText(text, x-tW , y);
-}
-
-function drawTextLeft(text,x,y,font,addw) {
-	ctx.fillStyle = 'white';
-	ctx.font = font + 'px Arial';
-	let tW = ctx.measureText(text).width;
-	ctx.fillText(text, x , y);
+	position == "left" ? ctx.fillText(text, x , y) : (position == "right" ? ctx.fillText(text, x-tW , y) : ctx.fillText(text, x-tW/2 , y));
 }
