@@ -29,7 +29,7 @@ function keyCont(){
 		else 
 			players[1].vy = players[1].speed;
 	else players[1].vy = 0;
-	if (key[17])
+	if (key[13])
 		fire (1);
 	
 
