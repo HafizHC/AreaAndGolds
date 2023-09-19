@@ -7,5 +7,5 @@ Altın toplama oyununu oynamak için: https://hafizhc.github.io/AreaAndGolds/Gol
 Kontroller:
 
 W, A, S ve D tuşları soldaki oyuncuyu; ileri, geri, sağ ve sol ok tuşarı ise sağdaki okuncuyu haraket ettirir. 
-Space tuşu ile soldaki, enter tuşu ile sağdaki oyuncu ateş eder.
+Space tuşu ile soldaki oyuncu, enter tuşu ile sağdaki oyuncu ateş eder.
 
