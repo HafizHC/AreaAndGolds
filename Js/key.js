@@ -2,8 +2,8 @@
 document.addEventListener('keydown', keyDown.bind(this));
 document.addEventListener('keyup', keyUp.bind(this));
 
-var key = {37: false, 38: false, 39: false, 40: false, 17: false, 87: false, 68: false, 65: false, 83: false, 32: false};
-const keylist = [37,38,39,40,17,87,68,65,83,32];
+var key = {37: false, 38: false, 39: false, 40: false, 13: false, 87: false, 68: false, 65: false, 83: false, 32: false};
+const keylist = [37,38,39,40,13,87,68,65,83,32];
 
 
 function keyDown(e){
